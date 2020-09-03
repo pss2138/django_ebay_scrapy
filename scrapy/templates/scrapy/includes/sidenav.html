@@ -1,0 +1,23 @@
+{% load static %}
+
+
+<ul id="slide-out" class="sidenav">
+  <li>
+    <div class="user-view">
+      <div class="background"></div>
+        <a href="#home"><img class="brand-logo circle" src="{% static 'main/images/logo.png' %}"></a>
+    </div>
+  </li>
+
+  <div class="user-view">
+    <a href="#keyword"><span class="black-text name">Keyword</span></a>
+    <a href="#graph"><span class="black-text name">Graph</span></a>
+    <a href="#table_keyword"><span class="black-text name">Top 100 Popular Items</span></a>
+    <a href="#table_related"><span class="black-text name">Related Items</span></a>
+  </div>
+
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">History</a></li>
+  <li><a class="waves-effect" href="#!">Histories will be here</a></li>
+</ul>
+<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="medium material-icons right bottom">map</i></a>

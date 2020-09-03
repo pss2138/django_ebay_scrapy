@@ -1,0 +1,16 @@
+
+<div class="container">
+    <div class="row">
+      <form action="/scrapy/" method="post">
+        {% csrf_token %}
+          <div class="input-field col s10">
+            <input type="text" name="search" size=15 placeholder="Enter your Keyword(s)">
+          </div>
+          <div class="input-field col s2">
+            <button type="submit" class="waves-effect waves-light btn-large" style="background-color:#ffcc80; color:black;">Search</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+

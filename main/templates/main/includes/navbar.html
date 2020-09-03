@@ -1,0 +1,25 @@
+{% load static %}
+
+<nav>
+	<div class="nav_wrapper">
+
+		<a href="/" class="brand-logo left" style="margin-left: 15px">
+			eBay Scrapy
+			<img class="brand-logo" src="{% static 'main/images/logo.png' %}" width="60" height="auto"></a>
+			
+		<ul id="nav=mobile" class="right hide-on-med-and-down">
+			<li><a href="/">Home</a></li>
+			{% if user.is_authenticated %}
+        <li><a href="/account">{{user.username}}</a></li>
+        <li><a href="https://github.com/pss2138/django_ebay_scrapy">Help</a></li>
+        <li><a href="/logout">Log out</a></li>
+
+      {% else %}
+        <li><a href="https://github.com/pss2138/django_ebay_scrapy">Help</a></li>
+				<li><a href="/register">Sign up</a></li>
+        <li><a href="/login">Login</a></li>
+			{% endif %}
+		</ul>
+		
+	</div>
+</nav>

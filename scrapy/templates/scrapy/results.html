@@ -1,0 +1,58 @@
+{% extends "main/header.html" %}
+
+<body>
+
+  {% block sidenav %}
+  {% include "scrapy/includes/sidenav.html" %}
+  {% endblock %}
+
+  <div class="container">
+    <div class="col s12, m8, l8">
+      <div class="section scrollspy">
+        <br>
+        {% block keyword %}
+        {% include "scrapy/includes/keyword.html" %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <div class="col s12, m8, l8">
+      <div class="section scrollspy">
+        <br>
+        {% block graph %}
+        {% include "scrapy/includes/graph.html" %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col s12, m8, l8">
+      <div class="section scrollspy">
+        <br>
+        {% block table_keyword %}
+        {% include "scrapy/includes/table_keyword.html" %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col s12, m8, l8">
+      <div class="section scrollspy">
+        <br>
+        {% block table_related %}
+        {% include "scrapy/includes/table_related.html" %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+
+

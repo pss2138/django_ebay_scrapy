@@ -1,0 +1,35 @@
+
+<blockquote><h3>Keyword : <strong>{{ text }}</strong></h3></blockquote><br><br>
+
+
+<blockquote><strong>Number of Products:</strong></blockquote>
+<t1><strong>{{ totalentries }}</strong></t1><br><br>
+
+<blockquote><strong>Keyword Recommended:</strong></blockquote>
+<table> {{ table_recommendation|safe }} </table><br><br>
+
+<div class="row">
+  <div class="col s6">
+    <blockquote><strong>Category Distribution(%):</strong></blockquote>
+    <table> {{ table_category|safe }} </table><br><br>
+  </div>
+
+  <div class="col s6">
+    <blockquote><strong>Price Distribution($):</strong></blockquote>
+    <table> {{ table_price|safe }} </table><br><br>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6">
+    <blockquote><strong>Shipping Cost Distribution:</strong></blockquote>
+    <table> {{ table_shippingcost|safe }} </table><br><br>
+  </div>
+
+  <div class="col s6">
+    <blockquote><strong>Duration Distribution(days):</strong></blockquote>
+    <table> {{ table_duration|safe }} </table><br><br>
+  </div>
+</div>
+
+
